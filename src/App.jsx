@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 import { LanguageDropDown } from "./components/LanguageDropDown/LanguageDropDown";
 import { consoleGreetings } from "./helpers/consoleGreetings";
-import { Main } from './pages/Main';
+import { LandingPage } from './pages/LandingPage';
 
 import "./lib/i18n";
 import "./App.less";
@@ -36,14 +36,14 @@ const App = observer(() => {
 
   useEffect(() => {
     consoleGreetings();
-  }, []);
+  });
 
   return (
     <BrowserRouter>
       <div className="App">
         <div className="main">
           <LanguageDropDown />
-          <Main />
+          <LandingPage />
         </div>
       </div>
     </BrowserRouter>

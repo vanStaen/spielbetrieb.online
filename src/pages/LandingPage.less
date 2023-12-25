@@ -1,0 +1,94 @@
+.landingPage__container {
+
+   // iphone screen animation
+   .pca-hold.circle-animation {width: 356px; } 
+   .pca-hold.circle-animation 
+   .pca-main {
+      display: block; 
+      position: relative; 
+      background: linear-gradient(#A1E5E5,#1987AA);  
+      border: 10.68px solid #fff; 
+      border-top: 81.88px solid #fff; 
+      border-bottom: 84.016px solid #fff;    
+      border-radius: 40.228px; height: 730.512px; 
+      box-shadow: 0 0 0 3.56px #C6C7CA; 
+   } 
+   .pca-hold.circle-animation .pca-main:after {
+      content: ''; 
+      position: absolute; 
+      top: -46.28px; 
+      left: 55%; 
+      -webkit-transform: translate(-50%,0); 
+      -ms-transform: translate(-50%,0); 
+      -o-transform: translate(-50%,0); 
+      transform: translate(-50%,0); 
+      width: 10.68px; 
+      height: 10.68px; 
+      background-color: #959595; 
+      border-radius: 100%; 
+      -webkit-transform: translate(-64.08px,0); 
+      -ms-transform: translate(-64.08px,0); 
+      -o-transform: translate(-64.08px,0); 
+      transform: translate(-64.08px,0); 
+   } 
+   .pca-hold.circle-animation .pca-main:before {
+      content: ""; 
+      position: absolute; 
+      top: -17.8px; 
+      left: 55%; 
+      opacity: 1; 
+      width: 71.2px; 
+      height: 3.56px; 
+      -webkit-transform: translate(-32.04px,-26.7px);
+      -ms-transform: translate(-32.04px,-26.7px); 
+      -o-transform: translate(-32.04px,-26.7px); 
+      transform: translate(-32.04px,-26.7px); 
+      border-radius: 3.56px; 
+      background-color: #959595; 
+   } 
+   .pca-hold.circle-animation .pca-inner {
+      display: block; 
+      height: 100%; 
+      overflow: hidden;
+   } 
+   .pca-hold.circle-animation .pca-sub {
+      display: block; 
+      text-align: center;
+      position: relative; 
+      height: 0; 
+   } 
+   .pca-hold.circle-animation .pca-sub .pca-bot {
+      border-radius: 100%; 
+      width: 49.84px; 
+      height: 49.84px; 
+      display: block; 
+      margin: 0 auto; 
+      background-color: transparent; 
+      z-index: 2; 
+      box-shadow: 0 0 0 3.916px #636670; 
+      -webkit-transform: translate(0,-66.928px); 
+      -ms-transform: translate(0,-66.928px); 
+      -o-transform: translate(0,-66.928px); 
+      transform: translate(0,-66.928px); 
+   }
+
+
+   .layout--copy-left {
+      
+      &.active {
+         .pca-hold {
+            transform: translate3d(-20%, -50%, 0) scale(.5);
+         }
+      }   
+      
+      .pca-hold {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate3d(100%, -100%, 0);
+         transition: transform 1s ease;
+      }   
+      
+   }
+
+}
