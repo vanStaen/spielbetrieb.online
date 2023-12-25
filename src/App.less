@@ -1,0 +1,86 @@
+html, body {
+  // Deactivate android swipe behavior
+  // eg: swipe flet to go back in the history 
+  // or swipe down to reload the page
+  // overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue";
+  //overflow-y: hidden; 
+}
+
+.App {
+  font-size: min(calc(7px + 2vmin), 25px);
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  /* Fallback for browsers that do not support Custom Properties */
+  min-height: calc(var(--vh, 1vh) * 100);
+
+
+  .main {
+    min-height: calc(var(--vh, 1vh) * 100);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.link {
+  color: rgba(255, 255, 255, .95);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.link:hover {
+  color: rgba(255, 255, 255, .75);
+  text-decoration: underline;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer:hover {
+  font-weight: 300;
+}
+
+/* black notification */
+.blackNotification {
+  background: rgb(33,33, 33) !important;
+  border: 1px solid rgba(255, 255, 255, .1);
+  padding: 10px 14px 4px 14px !important;
+  width: auto !important;
+
+}
+.blackNotification .ant-notification-notice-message {
+  color: white  !important;
+}
+
+.blackNotification .anticon-close {
+  color: rgba(255, 255, 255, .75) !important;
+}
+
+.blackNotification .ant-notification-notice-close {
+  top: 12px !important;
+  right: 12px !important;
+}
+
+/* Tooltip custom */
+.ant-tooltip {
+  color: rgba(255, 255, 255, 0.75);
+  .ant-tooltip-inner {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  .ant-tooltip-arrow {
+    &:after {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+}

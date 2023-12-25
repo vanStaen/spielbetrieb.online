@@ -1,0 +1,80 @@
+{
+  "loginRecover": {
+    "passwordReseted": "Dein Passwort wurde zurück gesetzt. Sie werden auf die Login-Seite weitergeleitet.",
+    "passwordNotChanged": "Fehler! Das Passwort wurde nicht geändert: Bitte versuchen Sie es erneut.",
+    "linkNotValid": "Dieser Link ist ungültig. Bitte starten Sie den Passwortwiederherstellungsprozess neu.",
+    "pleaseInputNewPassword": "Bitte geben Sie Ihr neues Passwort ein!",
+    "passwordDoNotMatch": "Die Passwörter stimmen nicht überein!",
+    "pleaseConfirmNewPassword" : "Bitte bestätigen Sie Ihr neues Passwort!",
+    "updatePassword": "Passwort aktualisieren",
+    "linkNotValidAnymore": "Link ist nicht mehr gültig",
+    "recoverEmailSent": "Einem email mit dem link um der Passwort zu wiedererstellen ist verschickt worden!"
+  },
+  "login": {
+    "loginSuccess": "Erfolgreich eingelogt!",
+    "logoutSuccess": "Erfolgreich ausgelogt!",
+    "pleaseInputEmail": "Bitte gebe dein Email ein.",
+    "pleaseInputEmailOrUsername": "Bitte gebe dein Email oder Benutzername ein.",
+    "emailOrUsername": "Email oder Benutzername",
+    "pleaseInputPassword": "Bitte gebe dein Passwort ein!",
+    "password": "passwort",
+    "forgotPassword": "Passwort vergessen?",
+    "remember": "Alles gut, ich errinere mich",
+    "login": "Einlogen",
+    "emailDoesNotExist": "Dieser Email existiert nicht!",
+    "sendResetPasswordEmail": "Passwort Reset Link verschicken"
+  },
+  "welcome" : {
+    "about" : "Ursprünglich im Jahr 2011 gegründet, Schwerelos ist ein Kollektiv junger Stadtbewohner, die sich dafür einsetzen, sich in das Berliner Nachtleben einzubringen. Mit dem Relaunch nach der Pandemie bleibt unsere Mission und unsere Werte unverändert: unsere Liebe zur Techno-Musik - durch Clubveranstaltungen, öffentliche Open-Airs und verschiedene individuelle Projekte - zu teilen.",
+    "upcomingEvent" : "Kommende Veranstaltungen",
+    "channel": "Kanal"
+  },
+  "events" : {
+    "upcoming" : "Demnächst",
+    "past": "Vergangen",
+    "ourNext": "unsere nächsten",
+    "shows": "shows"
+  },
+  "charityRave" : {
+    "subTitle": "Alle Gewinne der Veranstaltung gehen an die ",
+    "writeUsTo": "Schreibt uns an",
+    "toGetTikets" : "um Karten zu bekommen",
+    "oClock": "UHR",
+    "location": "Geheimer Naturstandort",
+    "getATicket": "Hier klicken um eine Karte zu reservieren",
+    "left": "Karten übrig",
+    "email": "Email",
+    "name": "Name",
+    "pleaseInputName": "Bitte gebe dein Name ein!",
+    "pleaseInputEmail": "Bitte gebe dein Email ein!",
+    "reserveTicket": "Ticket reservieren",  
+    "of": "von",    
+    "ticketReservationSuccess": "Die reservierung war erfolgreich! Du bekommst bald ein Email von uns.",
+    "ticketAlreadyReserved": "Du hast schon eine reservierte Karte. Nutzt eine andere email um eine neue Karte zu reservieren",
+    "15": "AK15",
+    "notMandatory": "reservierung verpfichtet nicht zum kauf"
+  },
+  "artist" : {
+    "is": "ist",
+    "randomSpin" : "Zufälliger Spin | Nichts geht mehr"
+  },
+  "menu" : {
+    "about": "Über uns"
+  },
+  "merch" : {
+    "merch": "merch",
+    "comeGetSome": "Willste echt jute"
+  },
+  "admin": {
+    "ticketReservation" : "Karten Reservierung",
+    "logout": "Ausloggen",
+    "goBack": "Admin bereich verlassen"
+  },
+  "404": {
+    "endOfInternet" : "Sie haben das Ende des Internets erreicht!"
+  },
+  "general": {
+    "on" : "auf",
+    "emailUs": "Schreib uns"
+  }
+}
