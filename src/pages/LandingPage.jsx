@@ -13,6 +13,7 @@ export const LandingPage = () => {
                     <div className='pca-main'>
                         <div className='pca-inner'>
                             <div className="circle">
+                                THIS IS MERRIER
                             </div>
                         </div>
                     </div>
@@ -23,6 +24,9 @@ export const LandingPage = () => {
                         </div> <div className='pca-bot'></div>
                     </div>
                 </div>
+            </div>
+            <div>
+                Spielbetrieb
             </div>
         </div>
     )
