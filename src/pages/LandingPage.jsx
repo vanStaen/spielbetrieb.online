@@ -1,6 +1,9 @@
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
+import SpielbetriebLogo from "../img/logos/spielbetriebLogo.png";
+import { Phone } from '../components/Phone/Phone';
+
 import './LandingPage.less';
 
 export const LandingPage = () => {
@@ -8,25 +11,10 @@ export const LandingPage = () => {
 
     return (
         <div className="landingPage__container">
-            <div className="layout--copy-left">
-                <div className='pca-hold circle-animation'>
-                    <div className='pca-main'>
-                        <div className='pca-inner'>
-                            <div className="circle">
-                                THIS IS MERRIER
-                            </div>
-                        </div>
-                    </div>
-                    <div className='pca-sub'>
-                        <div className='pca-top'>
-                        </div> <div className='pca-mid'>
-                            <div className='pca-part'></div>
-                        </div> <div className='pca-bot'></div>
-                    </div>
-                </div>
-            </div>
+            {/* <Phone color='white' content={<>Merrier</>} /> */}
             <div>
-                Spielbetrieb
+                <img className="SpielbetriebLogo" src={SpielbetriebLogo} id="soundcloud" />
+                <div className="SpielbetriebText">Spielbetrieb</div>
             </div>
         </div>
     )
