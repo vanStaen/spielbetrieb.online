@@ -8,20 +8,11 @@ export const Phone = (props) => {
     console.log(color)
 
     return (<div className="layout--copy-left">
-        <div className='pca-hold circle-animation'>
-            <div className='pca-main'>
-                <div className='pca-inner'>
-                    <div className="circle">
-                        {content}
-                    </div>
-                </div>
+        <div className='phone'>
+            <div className='phone__main'>
+                {content}
             </div>
-            <div className='pca-sub'>
-                <div className='pca-top'>
-                </div> <div className='pca-mid'>
-                    <div className='pca-part'></div>
-                </div> <div className='pca-bot'></div>
-            </div>
+            <div className='phone__button'></div>
         </div>
     </div>)
 

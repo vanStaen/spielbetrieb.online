@@ -1,16 +1,50 @@
+@widthPhonePanel: 40vw;
+
 .landingPage__container {
-   .SpielbetriebLogo {
-      position: relative;
-      top: -10px;
-      .SpielbetriebText {
-         font-size: 33px;
-         font-family: "Roboto", Sans-serif;
-         letter-spacing: 3px;
-         color: rgba(30,48,68, 1);
-         font-weight: 300;
-         text-transform: capitalize;
-         margin-top: 30px;
+   .spielbetrieb__container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .spielbetrieb__logoAndText {
+         position: relative;
+         //transform: translate3d(-35%, 0%, 0);
+         transition: transform 1s ease;
+         top: -10px;
+         .spielbetrieb__logo {
+            filter: invert(1);
+            width: 300px;
+         }
+         .spielbetrieb__text {
+            font-size: 33px;
+            font-family: "Roboto", Sans-serif;
+            letter-spacing: 5px;
+            color: rgba(225, 207, 187, 1);
+            font-weight: 600;
+            margin-top: 30px;
+         }
+         .spielbetrieb__subtext {
+            font-size: 13px;
+            font-family: "Roboto", Sans-serif;
+            letter-spacing: 10px;
+            color: rgba(225, 207, 187, 1);
+            font-weight: 300;
+            margin-top: 10px;
+            opacity: .5;
+         }
       }
-   } 
-   
+   }
+   .phone__container {
+      position: absolute;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      width: @widthPhonePanel;
+      .phone {
+         transform: translate3d(50%, -3%, 0);
+         //transform: translate3d(0%, -3%, 0);
+         transition: transform 1s ease;
+      }
+   }
 }

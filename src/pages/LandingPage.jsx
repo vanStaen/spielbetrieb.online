@@ -11,10 +11,17 @@ export const LandingPage = () => {
 
     return (
         <div className="landingPage__container">
-            <Phone color='white' content={<>Merrier</>} />
-            <div className="SpielbetriebLogo">
-                <img src={SpielbetriebLogo} id="soundcloud" />
-                <div className="SpielbetriebText">Spielbetrieb | Coming soon</div>
+            <div className='spielbetrieb__container'>
+                <div className='spielbetrieb__logoAndText'>
+                    <img src={SpielbetriebLogo} id="spielbetriebLogo" className='spielbetrieb__logo' />
+                    <div className="spielbetrieb__text">Spielbetrieb </div>
+                    <div className="spielbetrieb__subtext">{t('general.commingsoon')} </div>
+                </div>
+            </div>
+            <div className='phone__container'>
+                <div className="phone">
+                    <Phone color='white' content={<>Merrier</>} />
+                </div>
             </div>
         </div>
     )
