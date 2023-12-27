@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import { LanguageDropDown } from "./components/LanguageDropDown/LanguageDropDown";
+import { DarkModeDropDown } from "./components/DarkModeDropDown/DarkModeDropDown";
 import { consoleGreetings } from "./helpers/consoleGreetings";
 import { LandingPage } from './pages/LandingPage';
 
@@ -40,9 +41,10 @@ const App = observer(() => {
 
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" id='app'>
         <div className="main">
           <LanguageDropDown />
+          <DarkModeDropDown />
           <LandingPage />
         </div>
       </div>

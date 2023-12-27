@@ -7,13 +7,13 @@ export const Phone = (props) => {
 
     console.log(color)
 
-    return (<div className="layout--copy-left">
+    return (
         <div className='phone'>
             <div className='phone__main'>
                 {content}
             </div>
             <div className='phone__button'></div>
         </div>
-    </div>)
+    )
 
 } 
