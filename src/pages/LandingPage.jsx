@@ -10,7 +10,6 @@ import './Merrier.less';
 export const LandingPage = () => {
     const { t } = useTranslation();
 
-
     useEffect(() => {
         const elementPhone = document.getElementById('phone');
         const elementSpielbetrieb = document.getElementById('spielbetrieb');
@@ -41,7 +40,7 @@ export const LandingPage = () => {
                         content={
                             <div className='merrier__container'>
                                 <div className='merrier__title'>Merrier</div>
-                                <div className='merrier__subtitle'>by spielbetrieb</div>
+                                <div className='merrier__subtitle'>{t("general.by")} spielbetrieb</div>
                             </div>
                         } />
                 </div>
