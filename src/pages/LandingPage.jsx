@@ -48,8 +48,8 @@ export const LandingPage = () => {
                                     </a>
                                 </Tooltip>
                             </div>
-                            <div className='spielbetrieb__link' placement='bottom'>
-                                <Tooltip title="Linktree">
+                            <div className='spielbetrieb__link'>
+                                <Tooltip title="Linktree" placement='bottom'>
                                     <a href='https://linktr.ee/spielbetrieb' target='_blank'>
                                         <LinkOutlined />
                                     </a>
