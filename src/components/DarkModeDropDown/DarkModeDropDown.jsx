@@ -49,7 +49,7 @@ export const DarkModeDropDown = () => {
 
   return (
     <div className="darkmodeDropdown" id='darkmodedropdown'>
-      <Dropdown menu={menu} trigger={"click"}>
+      <Dropdown overlay={menu} trigger={"click"}>
         <a
           className="ant-dropdown-link"
           onClick={(e) => {
