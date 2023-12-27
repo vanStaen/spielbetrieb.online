@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Menu, Dropdown } from "antd";
 import { useTranslation } from "react-i18next";
 import { DownOutlined } from "@ant-design/icons";
+import Cookies from 'universal-cookie';
 
 import "./DarkModeDropDown.less";
 
 export const DarkModeDropDown = () => {
-  const [mode, setMode] = useState(1);
+  const cookies = new Cookies();
   const { t } = useTranslation();
+  const [mode, setMode] = useState(cookies.get('darkMode'));
 
   useEffect(() => {
     const elementspielbetriebcontainer = document.getElementById('spielbetriebcontainer');
@@ -20,11 +22,17 @@ export const DarkModeDropDown = () => {
     elementlanguagedropdown.style.filter = `invert(${mode})`;
   }, [mode]);
 
+  useEffect(() => {
+    setMode(cookies.get('darkMode'))
+    console.log('cookies.get(darkMode)', cookies.get('darkMode'));
+  }, [])
+
   const menu = (
     <Menu>
       <Menu.Item
         onClick={() => {
           setMode(0);
+          cookies.set('darkMode', 0, { path: '/' });
         }}
       >
         <div className="darkmodeDropdown__item">{t('general.dark')}</div>
@@ -32,6 +40,7 @@ export const DarkModeDropDown = () => {
       <Menu.Item
         onClick={() => {
           setMode(1);
+          cookies.set('darkMode', 1, { path: '/' });
         }}
       >
         <div className="darkmodeDropdown__item">{t('general.light')}</div>
@@ -48,7 +57,7 @@ export const DarkModeDropDown = () => {
             e.preventDefault();
           }}
         >
-          {mode ? t('general.light') : t('general.dark')}
+          {mode == 0 ? t('general.dark') : t('general.light')}
           <DownOutlined />
         </a>
       </Dropdown>

@@ -39,8 +39,9 @@ export const LandingPage = () => {
                     <Phone
                         color='white'
                         content={
-                            <div className='merrier__background'>
+                            <div className='merrier__container'>
                                 <div className='merrier__title'>Merrier</div>
+                                <div className='merrier__subtitle'>by spielbetrieb</div>
                             </div>
                         } />
                 </div>
