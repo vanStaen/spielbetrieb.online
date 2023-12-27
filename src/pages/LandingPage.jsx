@@ -25,7 +25,8 @@ export const LandingPage = () => {
 
     return (
         <div className="landingPage__container">
-            <div className='spielbetrieb__container'>
+            <div className='spielbetrieb__background'></div>
+            <div className='spielbetrieb__container' id='spielbetriebcontainer'>
                 <div className='spielbetrieb__logoAndText' id='spielbetrieb'>
                     <img src={SpielbetriebLogo} id="spielbetriebLogo" className='spielbetrieb__logo' />
                     <div className="spielbetrieb__text">Spielbetrieb </div>

@@ -2,7 +2,14 @@
 
 .landingPage__container {
    position: relative;
+   .spielbetrieb__background {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('../img/background.jpg');
+   }
    .spielbetrieb__container {
+      z-index: 1;
       height: 100vh;
       display: flex;
       flex-direction: column;
@@ -13,7 +20,6 @@
          transition: transform 1s ease;
          top: -10px;
          .spielbetrieb__logo {
-            filter: invert(1);
             width: 300px;
          }
          .spielbetrieb__text {

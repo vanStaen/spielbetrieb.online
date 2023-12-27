@@ -8,8 +8,8 @@ export const DarkModeDropDown = () => {
   const [mode, setMode] = useState(1);
 
   useEffect(() => {
-    const elementapp = document.getElementById('app');
-    elementapp.style.filter = `invert(${mode})`;
+    const elementspielbetriebcontainer = document.getElementById('spielbetriebcontainer');
+    elementspielbetriebcontainer.style.filter = `invert(${mode})`;
   }, [mode]);
 
   const menu = (
