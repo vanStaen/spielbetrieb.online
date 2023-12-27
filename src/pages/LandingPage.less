@@ -18,7 +18,7 @@
    .spielbetrieb__container {
       position: relative;
       height: 100vh;
-      z-index: 1;
+      z-index: 10;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -56,6 +56,20 @@
             margin-top: 10px;
             opacity: .5;
          }
+         .spielbetrieb__links {
+            .spielbetrieb__link {
+               display: inline-flex;
+               padding: 30px 20px 0 20px;
+               a {
+                  color: rgba(225, 207, 187, 1);
+                  cursor: pointer;
+                  opacity: .5;
+                  &:hover {
+                     opacity: 1;
+                  }
+               }
+            }
+         }
       }
    }
    .phone__container {
@@ -66,8 +80,11 @@
       width: @widthPhonePanel;
       z-index: 1;
       .phone {
+         position: relative;
          transform: translate3d(30vw, -3%, 0);
          transition: transform 1s ease;
+         z-index: 1;
+         cursor: pointer;
       }
       @media only screen and (max-width: 675px) {
          .phone {

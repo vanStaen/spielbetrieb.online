@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
+import { Tooltip } from 'antd';
 import { useTranslation } from "react-i18next";
+import { NotificationOutlined, MailOutlined, LinkOutlined } from '@ant-design/icons';
 
 import SpielbetriebLogo from "../img/logos/spielbetriebLogo.png";
 import { Phone } from '../components/Phone/Phone';
@@ -31,6 +33,29 @@ export const LandingPage = () => {
                         <img src={SpielbetriebLogo} id="spielbetriebLogo" className='spielbetrieb__logo' />
                         <div className="spielbetrieb__text">Spielbetrieb </div>
                         <div className="spielbetrieb__subtext">{t('general.commingsoon')} </div>
+                        <div className='spielbetrieb__links'>
+                            <div className='spielbetrieb__link'>
+                                <Tooltip title="Newsletter">
+                                    <a href='https://seu2.cleverreach.com/f/365036-367852/' target='_blank'>
+                                        <NotificationOutlined />
+                                    </a>
+                                </Tooltip>
+                            </div>
+                            <div className='spielbetrieb__link'>
+                                <Tooltip title="eMail">
+                                    <a href='mailto:info@spielbetrieb.online' target='_blank'>
+                                        <MailOutlined />
+                                    </a>
+                                </Tooltip>
+                            </div>
+                            <div className='spielbetrieb__link'>
+                                <Tooltip title="Linktree">
+                                    <a href='https://linktr.ee/spielbetrieb' target='_blank'>
+                                        <LinkOutlined />
+                                    </a>
+                                </Tooltip>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className='phone__container'>
