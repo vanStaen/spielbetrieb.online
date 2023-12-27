@@ -14,7 +14,6 @@ export const LandingPage = () => {
         const elementPhone = document.getElementById('phone');
         const elementSpielbetrieb = document.getElementById('spielbetrieb');
         const windowInnerWidth = window.innerWidth;
-        console.log('windowInnerWidth', windowInnerWidth);
         if (windowInnerWidth > 675) {
             setTimeout(() => {
                 elementPhone.style.transform = 'translate3d(-33vw, -3%, 0)';
@@ -40,7 +39,7 @@ export const LandingPage = () => {
                         content={
                             <div className='merrier__container'>
                                 <div className='merrier__title'>Merrier</div>
-                                <div className='merrier__subtitle'>{t("general.by")} spielbetrieb</div>
+                                <div className='merrier__subtitle'>{t("general.by")} Spielbetrieb</div>
                             </div>
                         } />
                 </div>

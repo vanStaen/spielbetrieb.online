@@ -24,7 +24,6 @@ export const DarkModeDropDown = () => {
 
   useEffect(() => {
     setMode(cookies.get('darkMode'))
-    console.log('cookies.get(darkMode)', cookies.get('darkMode'));
   }, [])
 
   const menu = (
@@ -50,7 +49,7 @@ export const DarkModeDropDown = () => {
 
   return (
     <div className="darkmodeDropdown" id='darkmodedropdown'>
-      <Dropdown overlay={menu} trigger={"click"}>
+      <Dropdown menu={menu} trigger={"click"}>
         <a
           className="ant-dropdown-link"
           onClick={(e) => {

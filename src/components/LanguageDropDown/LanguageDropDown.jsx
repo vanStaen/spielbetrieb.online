@@ -43,7 +43,7 @@ export const LanguageDropDown = () => {
 
   return (
     <div className="languageDropdown" id='languagedropdown'>
-      <Dropdown overlay={menu} trigger={"click"}>
+      <Dropdown menu={menu} trigger={"click"}>
         <a
           className="ant-dropdown-link"
           onClick={(e) => {
