@@ -16,10 +16,14 @@ export const DarkModeDropDown = () => {
     const elementbackground = document.getElementById('background');
     const elementdarkmodedropdown = document.getElementById('darkmodedropdown');
     const elementlanguagedropdown = document.getElementById('languagedropdown');
+    const elementmerriercontainer = document.getElementById('merriercontainer');
+    const elementmerriercontainermobile = document.getElementById('merriercontainermobile');
     elementspielbetriebcontainer.style.filter = `invert(${mode})`;
     elementbackground.style.filter = `invert(${mode})`;
     elementdarkmodedropdown.style.filter = `invert(${mode})`;
     elementlanguagedropdown.style.filter = `invert(${mode})`;
+    elementmerriercontainer.style.filter = `invert(${mode})`;
+    elementmerriercontainermobile.style.filter = `invert(${mode})`;
   }, [mode]);
 
   useEffect(() => {

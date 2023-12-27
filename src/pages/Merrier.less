@@ -18,8 +18,6 @@
 .merrier__container {
     width: 100%;
     height: 100%;
-    background-image: url('../img/background.jpg');
-    background-position: right;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -27,12 +25,25 @@
     justify-content: center;
     overflow: hidden;
     color: rgba(225, 207, 187, 1);
+    .merrier__background {
+        position: absolute;
+        background-image: url('../img/background.jpg');
+        background-position: right;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        filter: invert(1);
+    }
     .merrier__title {
+        position: relative;
         font-family: 'AbrilFatface';
         font-size: 33px;
         letter-spacing: -1px;
+        z-index: 5;
+        filter: invert(1);
     }
     .merrier__subtitle {
+        position: relative;
         color: #fff;
         font-family: "Roboto", Sans-serif;
         color: rgba(225, 207, 187, 1);
@@ -40,6 +51,8 @@
         margin-top: -2px;
         font-size: 8px;
         letter-spacing: 4px;
+        z-index: 5;
+        filter: invert(1);
     }
 }
 @media only screen and (max-width: 675px) {
