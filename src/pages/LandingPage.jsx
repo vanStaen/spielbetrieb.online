@@ -5,6 +5,7 @@ import SpielbetriebLogo from "../img/logos/spielbetriebLogo.png";
 import { Phone } from '../components/Phone/Phone';
 
 import './LandingPage.less';
+import './Merrier.less';
 
 export const LandingPage = () => {
     const { t } = useTranslation();
@@ -13,11 +14,13 @@ export const LandingPage = () => {
     useEffect(() => {
         const elementPhone = document.getElementById('phone');
         const elementSpielbetrieb = document.getElementById('spielbetrieb');
-
-        setTimeout(() => {
-            elementPhone.style.transform = 'translate3d(4vw, -3%, 0)';
-            elementSpielbetrieb.style.transform = 'translate3d(-15vw, 0%, 0)';
-        }, "500");
+        const screenWidth = window.screen.width;
+        if (screenWidth > 675) {
+            setTimeout(() => {
+                elementPhone.style.transform = 'translate3d(4vw, -3%, 0)';
+                elementSpielbetrieb.style.transform = 'translate3d(-15vw, 0%, 0)';
+            }, "500");
+        }
     }, []);
 
     return (
@@ -31,7 +34,7 @@ export const LandingPage = () => {
             </div>
             <div className='phone__container'>
                 <div className="phone" id='phone'>
-                    <Phone color='white' content={<>Merrier</>} />
+                    <Phone color='white' content={<div className='merrier__background'>Merrier</div>} />
                 </div>
             </div>
         </div>
