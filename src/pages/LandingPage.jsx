@@ -14,10 +14,11 @@ export const LandingPage = () => {
     useEffect(() => {
         const elementPhone = document.getElementById('phone');
         const elementSpielbetrieb = document.getElementById('spielbetrieb');
-        const screenWidth = window.screen.width;
-        if (screenWidth > 675) {
+        const windowInnerWidth = window.innerWidth;
+        console.log('windowInnerWidth', windowInnerWidth);
+        if (windowInnerWidth > 675) {
             setTimeout(() => {
-                elementPhone.style.transform = 'translate3d(4vw, -3%, 0)';
+                elementPhone.style.transform = 'translate3d(-33vw, -3%, 0)';
                 elementSpielbetrieb.style.transform = 'translate3d(-15vw, 0%, 0)';
             }, "500");
         }
@@ -25,7 +26,7 @@ export const LandingPage = () => {
 
     return (
         <div className="landingPage__container">
-            <div className='spielbetrieb__background'></div>
+            <div className='spielbetrieb__background' id='spielbetriebbackground'></div>
             <div className='spielbetrieb__container' id='spielbetriebcontainer'>
                 <div className='spielbetrieb__logoAndText' id='spielbetrieb'>
                     <img src={SpielbetriebLogo} id="spielbetriebLogo" className='spielbetrieb__logo' />

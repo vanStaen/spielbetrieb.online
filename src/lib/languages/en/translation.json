@@ -76,6 +76,8 @@
   "general": {
     "on" : "on",
     "emailUs": "Email us",
-    "commingsoon": "comming soon"
+    "commingsoon": "comming soon",
+    "dark": "Dark",
+    "light": "Light"
   }
 }

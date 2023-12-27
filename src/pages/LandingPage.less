@@ -1,7 +1,6 @@
 @widthPhonePanel: 40vw;
 
 .landingPage__container {
-   position: relative;
    .spielbetrieb__background {
       position: absolute;
       width: 100vw;
@@ -9,18 +8,19 @@
       background-image: url('../img/background.jpg');
    }
    .spielbetrieb__container {
-      z-index: 1;
+      position: relative;
       height: 100vh;
+      z-index: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       .spielbetrieb__logoAndText {
-         position: relative;
          transition: transform 1s ease;
-         top: -10px;
+         text-align: center;
          .spielbetrieb__logo {
             width: 300px;
+            filter: invert(1);
          }
          .spielbetrieb__text {
             font-size: 33px;
@@ -28,7 +28,6 @@
             letter-spacing: 5px;
             color: rgba(225, 207, 187, 1);
             font-weight: 600;
-            margin-top: 30px;
          }
          .spielbetrieb__subtext {
             font-size: 13px;
@@ -47,8 +46,9 @@
       top: 0;
       right: 0;
       width: @widthPhonePanel;
+      z-index: 1;
       .phone {
-         transform: translate3d(36vw, -3%, 0);
+         transform: translate3d(30vw, -3%, 0);
          transition: transform 1s ease;
       }
    }

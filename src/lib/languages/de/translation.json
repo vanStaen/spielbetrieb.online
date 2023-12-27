@@ -76,6 +76,8 @@
   "general": {
     "on" : "auf",
     "emailUs": "Schreib uns",
-    "commingsoon": "demnächst"
+    "commingsoon": "demnächst",
+    "dark": "Dunkel",
+    "light": "Hell"
   }
 }
