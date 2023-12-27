@@ -36,7 +36,13 @@ export const LandingPage = () => {
             </div>
             <div className='phone__container'>
                 <div className="phone" id='phone'>
-                    <Phone color='white' content={<div className='merrier__background'>Merrier</div>} />
+                    <Phone
+                        color='white'
+                        content={
+                            <div className='merrier__background'>
+                                <div className='merrier__title'>Merrier</div>
+                            </div>
+                        } />
                 </div>
             </div>
         </div>
