@@ -13,11 +13,11 @@ export const DarkModeDropDown = () => {
 
   useEffect(() => {
     const elementspielbetriebcontainer = document.getElementById('spielbetriebcontainer');
-    const elementspielbetriebbackground = document.getElementById('spielbetriebbackground');
+    const elementbackground = document.getElementById('background');
     const elementdarkmodedropdown = document.getElementById('darkmodedropdown');
     const elementlanguagedropdown = document.getElementById('languagedropdown');
     elementspielbetriebcontainer.style.filter = `invert(${mode})`;
-    elementspielbetriebbackground.style.filter = `invert(${mode})`;
+    elementbackground.style.filter = `invert(${mode})`;
     elementdarkmodedropdown.style.filter = `invert(${mode})`;
     elementlanguagedropdown.style.filter = `invert(${mode})`;
   }, [mode]);

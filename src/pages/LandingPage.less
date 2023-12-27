@@ -1,12 +1,20 @@
 @widthPhonePanel: 40vw;
 
-.landingPage__container {
-   .spielbetrieb__background {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      background-image: url('../img/background.jpg');
+.background {
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   background-image: url('../img/background.jpg');
+}
+@media only screen and (max-width: 675px) {
+   .background {
+      height: 200vh;
+      background-size: cover;
+      background-position: center;
    }
+}
+
+.landingPage__container {
    .spielbetrieb__container {
       position: relative;
       height: 100vh;
@@ -50,6 +58,21 @@
       .phone {
          transform: translate3d(30vw, -3%, 0);
          transition: transform 1s ease;
+      }
+      @media only screen and (max-width: 675px) {
+         .phone {
+           display: none;
+         }
+      }
+   }
+   .phone__mobileContainer {
+      display: none;
+      height: 100vh;
+      z-index: 10;
+   }
+   @media only screen and (max-width: 675px) {
+      .phone__mobileContainer {
+        display: block;
       }
    }
 }

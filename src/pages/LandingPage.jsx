@@ -23,17 +23,29 @@ export const LandingPage = () => {
     }, []);
 
     return (
-        <div className="landingPage__container">
-            <div className='spielbetrieb__background' id='spielbetriebbackground'></div>
-            <div className='spielbetrieb__container' id='spielbetriebcontainer'>
-                <div className='spielbetrieb__logoAndText' id='spielbetrieb'>
-                    <img src={SpielbetriebLogo} id="spielbetriebLogo" className='spielbetrieb__logo' />
-                    <div className="spielbetrieb__text">Spielbetrieb </div>
-                    <div className="spielbetrieb__subtext">{t('general.commingsoon')} </div>
+        <>
+            <div className='background' id='background'></div>
+            <div className="landingPage__container">
+                <div className='spielbetrieb__container' id='spielbetriebcontainer'>
+                    <div className='spielbetrieb__logoAndText' id='spielbetrieb'>
+                        <img src={SpielbetriebLogo} id="spielbetriebLogo" className='spielbetrieb__logo' />
+                        <div className="spielbetrieb__text">Spielbetrieb </div>
+                        <div className="spielbetrieb__subtext">{t('general.commingsoon')} </div>
+                    </div>
                 </div>
-            </div>
-            <div className='phone__container'>
-                <div className="phone" id='phone'>
+                <div className='phone__container'>
+                    <div className="phone" id='phone'>
+                        <Phone
+                            color='white'
+                            content={
+                                <div className='merrier__container'>
+                                    <div className='merrier__title'>Merrier</div>
+                                    <div className='merrier__subtitle'>{t("general.by")} Spielbetrieb</div>
+                                </div>
+                            } />
+                    </div>
+                </div>
+                <div className="phone__mobileContainer">
                     <Phone
                         color='white'
                         content={
@@ -44,6 +56,6 @@ export const LandingPage = () => {
                         } />
                 </div>
             </div>
-        </div>
+        </>
     )
 }
