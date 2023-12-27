@@ -35,20 +35,20 @@ export const LandingPage = () => {
                         <div className="spielbetrieb__subtext">{t('general.commingsoon')} </div>
                         <div className='spielbetrieb__links'>
                             <div className='spielbetrieb__link'>
-                                <Tooltip title="Newsletter">
+                                <Tooltip title="Newsletter" placement='bottom'>
                                     <a href='https://seu2.cleverreach.com/f/365036-367852/' target='_blank'>
                                         <NotificationOutlined />
                                     </a>
                                 </Tooltip>
                             </div>
                             <div className='spielbetrieb__link'>
-                                <Tooltip title="eMail">
+                                <Tooltip title="eMail" placement='bottom'>
                                     <a href='mailto:info@spielbetrieb.online' target='_blank'>
                                         <MailOutlined />
                                     </a>
                                 </Tooltip>
                             </div>
-                            <div className='spielbetrieb__link'>
+                            <div className='spielbetrieb__link' placement='bottom'>
                                 <Tooltip title="Linktree">
                                     <a href='https://linktr.ee/spielbetrieb' target='_blank'>
                                         <LinkOutlined />
