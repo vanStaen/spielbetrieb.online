@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Button } from 'antd';
 import { CloseOutlined } from '@ant-design/icons';
+import { pageStore } from "../../store/pageStore";
 
 import './AcceptCookie.less';
 
@@ -20,6 +21,9 @@ export const AcceptCookie = () => {
     }, [])
 
     const handleCloseClick = (value) => {
+        if (value) {
+            pageStore.setAllowCookie(true);
+        }
         const elementCookieContainer = document.getElementById('cookiecontainer');
         if (windowInnerWidth > 675) {
             elementCookieContainer.style.right = '-500px';

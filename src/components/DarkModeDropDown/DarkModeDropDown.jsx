@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { observer } from "mobx-react";
 import { Menu, Dropdown } from "antd";
 import { useTranslation } from "react-i18next";
 import { DownOutlined } from "@ant-design/icons";
-import Cookies from 'universal-cookie';
+
+import { pageStore } from "../../store/pageStore";
 
 import "./DarkModeDropDown.less";
 
-export const DarkModeDropDown = () => {
-  const cookies = new Cookies();
+export const DarkModeDropDown = observer(() => {
   const { t } = useTranslation();
-  const [mode, setMode] = useState(cookies.get('darkMode'));
+  const [theme, setTheme] = useState(pageStore.selectedTheme);
 
   useEffect(() => {
     const elementspielbetriebcontainer = document.getElementById('spielbetriebcontainer');
@@ -18,33 +19,31 @@ export const DarkModeDropDown = () => {
     const elementlanguagedropdown = document.getElementById('languagedropdown');
     const elementmerriercontainer = document.getElementById('merriercontainer');
     const elementmerriercontainermobile = document.getElementById('merriercontainermobile');
-    elementspielbetriebcontainer.style.filter = `invert(${mode})`;
-    elementbackground.style.filter = `invert(${mode})`;
-    elementdarkmodedropdown.style.filter = `invert(${mode})`;
-    elementlanguagedropdown.style.filter = `invert(${mode})`;
-    elementmerriercontainer.style.filter = `invert(${mode})`;
-    elementmerriercontainermobile.style.filter = `invert(${mode})`;
-  }, [mode]);
+    elementspielbetriebcontainer.style.filter = `invert(${theme})`;
+    elementbackground.style.filter = `invert(${theme})`;
+    elementdarkmodedropdown.style.filter = `invert(${theme})`;
+    elementlanguagedropdown.style.filter = `invert(${theme})`;
+    elementmerriercontainer.style.filter = `invert(${theme})`;
+    elementmerriercontainermobile.style.filter = `invert(${theme})`;
+  }, [theme]);
 
-  useEffect(() => {
-    setMode(cookies.get('darkMode'))
-  }, [])
+  const handleThemeChange = (value) => {
+    console.log('theme', value);
+    pageStore.setSelectedTheme(value);
+    setTheme(value);
+  }
 
   const menu = (
     <Menu>
       <Menu.Item
-        onClick={() => {
-          setMode(0);
-          cookies.set('darkMode', 0, { path: '/' });
-        }}
+        key='dark'
+        onClick={() => { handleThemeChange(0) }}
       >
         <div className="darkmodeDropdown__item">{t('general.dark')}</div>
       </Menu.Item>
       <Menu.Item
-        onClick={() => {
-          setMode(1);
-          cookies.set('darkMode', 1, { path: '/' });
-        }}
+        key='light'
+        onClick={() => { handleThemeChange(1) }}
       >
         <div className="darkmodeDropdown__item">{t('general.light')}</div>
       </Menu.Item>
@@ -60,10 +59,10 @@ export const DarkModeDropDown = () => {
             e.preventDefault();
           }}
         >
-          {mode == 0 ? t('general.dark') : t('general.light')}
+          {theme == 0 ? t('general.dark') : t('general.light')}
           <DownOutlined />
         </a>
       </Dropdown>
     </div>
   );
-};
+});
