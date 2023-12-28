@@ -83,7 +83,9 @@ export const LandingPage = () => {
                         content={
                             <div className='merrier__container' id='merriercontainermobile'>
                                 <div className='merrier__background'></div>
-                                <div className='merrier__title'>Merrier</div>
+                                <img src={SpielbetriebLogo} className='merrier__biglogo' />
+                                <img src={MerrierLogo} className='merrier__logo' />
+                                {/*<div className='merrier__title'>Merrier</div>*/}
                                 <div className='merrier__subtitle'>{t("general.by")} Spielbetrieb</div>
                             </div>
                         } />
