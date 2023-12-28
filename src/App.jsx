@@ -29,11 +29,21 @@ const App = observer(() => {
   }, []);
 
   useEffect(() => {
-    const language = navigator.language || navigator.userLanguage;
-    if (language === "de-DE") {
-      i18n.changeLanguage("de-DE");
+    if (pageStore.selectedLanguage) {
+      if (pageStore.selectedLanguage === "de") {
+        i18n.changeLanguage("de-DE");
+      } else {
+        i18n.changeLanguage("en-US");
+      }
     } else {
-      i18n.changeLanguage("en-US");
+      const browserlanguage = navigator.language || navigator.userLanguage;
+      if (browserlanguage === "de-DE") {
+        i18n.changeLanguage("de-DE");
+        pageStore.setSelectedLanguage('de');
+      } else {
+        i18n.changeLanguage("en-US");
+        pageStore.setSelectedLanguage('en');
+      }
     }
   }, [i18n]);
 

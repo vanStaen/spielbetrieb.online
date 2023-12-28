@@ -4,7 +4,6 @@ import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 
 export class PageStore {
-
     selectedTheme = cookies.get('selectedTheme');
     selectedLanguage = cookies.get('selectedLanguage');
     allowCookie = cookies.get('allowCookie');
@@ -22,17 +21,24 @@ export class PageStore {
 
     setSelectedTheme = (selectedTheme) => {
         this.selectedTheme = selectedTheme;
-        cookies.set('selectedTheme', selectedTheme, { path: '/' });
+        if (this.allowCookie) {
+            cookies.set('selectedTheme', selectedTheme, { path: '/' });
+        }
     };
 
-    setSelectedLanguage = (allowCookie) => {
-        this.allowCookie = allowCookie;
-        cookies.set('allowCookie', allowCookie, { path: '/' });
+    setSelectedLanguage = (selectedLanguage) => {
+        console.log('selectedLanguage', selectedLanguage)
+        this.selectedLanguage = selectedLanguage;
+        if (this.allowCookie) {
+            cookies.set('selectedLanguage', selectedLanguage, { path: '/' });
+        }
     };
 
     setAllowCookie = (allowCookie) => {
         this.allowCookie = allowCookie;
-        cookies.set('allowCookie', allowCookie, { path: '/' });
+        if (allowCookie) {
+            cookies.set('allowCookie', true, { path: '/' });
+        }
     };
 }
 

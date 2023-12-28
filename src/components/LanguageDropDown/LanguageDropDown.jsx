@@ -1,24 +1,24 @@
 import React, { useState } from "react";
+import { observer } from "mobx-react";
 import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
 import { useTranslation } from "react-i18next";
+import { pageStore } from "../../store/pageStore";
 
 import "./LanguageDropDown.less";
 
-export const LanguageDropDown = () => {
+export const LanguageDropDown = observer(() => {
   const { i18n } = useTranslation();
-  const initLanguage = i18n.language.slice(-2);
-  const [language, setLanguage] = useState(
-    initLanguage === "US" ? "EN" : initLanguage
-  );
+  const [language, setLanguage] = useState(pageStore.selectedLanguage);
 
   const onLanguageChangeHandler = (value) => {
+    pageStore.setSelectedLanguage(value);
     if (value === "en") {
       i18n.changeLanguage("en-US");
-      setLanguage("EN");
+      setLanguage("en");
     } else if (value === "de") {
       i18n.changeLanguage("de-DE");
-      setLanguage("DE");
+      setLanguage("de");
     }
   };
 
@@ -56,4 +56,4 @@ export const LanguageDropDown = () => {
       </Dropdown>
     </div>
   );
-};
+});

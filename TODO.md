@@ -9,11 +9,11 @@
   - [x] Colors charts
     - [x] Light Theme
     - [x] Dark Theme
-  - [ ] Accept Cookie
+  - [x] Accept Cookie
     - [x] Modal with button
-    - [ ] Mobx Store
-    - [ ] Universal Cookie
-    - [ ] Store:
-      - [ ] If Cookie allowed
-      - [ ] Last theme used
-      - [ ] Last Language used
+    - [x] Mobx Store
+    - [x] Universal Cookie
+    - [x] Store:
+      - [x] If Cookie allowed
+      - [x] Last theme used
+      - [x] Last Language used
