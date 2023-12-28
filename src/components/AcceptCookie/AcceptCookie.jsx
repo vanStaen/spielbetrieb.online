@@ -28,7 +28,7 @@ export const AcceptCookie = () => {
         if (windowInnerWidth > 675) {
             elementCookieContainer.style.right = '-500px';
         } else {
-            elementCookieContainer.style.top = '-200px';
+            elementCookieContainer.style.top = '-250px';
         }
     }
 

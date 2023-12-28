@@ -5,7 +5,7 @@ const cookies = new Cookies();
 
 export class PageStore {
     selectedTheme = cookies.get('selectedTheme');
-    selectedLanguage = cookies.get('selectedLanguage');
+    selectedLanguage = cookies.get('selectedLanguage') || 'en';
     allowCookie = cookies.get('allowCookie');
 
     constructor() {
