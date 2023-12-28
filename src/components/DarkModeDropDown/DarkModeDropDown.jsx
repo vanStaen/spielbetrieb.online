@@ -18,6 +18,7 @@ export const DarkModeDropDown = observer(() => {
     const elementdarkmodedropdown = document.getElementById('darkmodedropdown');
     const elementlanguagedropdown = document.getElementById('languagedropdown');
     const elementmerriercontainer = document.getElementById('merriercontainer');
+    const elementarrow = document.getElementById('arrow');
     const elementmerriercontainermobile = document.getElementById('merriercontainermobile');
     elementspielbetriebcontainer.style.filter = `invert(${theme})`;
     elementbackground.style.filter = `invert(${theme})`;
@@ -25,6 +26,7 @@ export const DarkModeDropDown = observer(() => {
     elementlanguagedropdown.style.filter = `invert(${theme})`;
     elementmerriercontainer.style.filter = `invert(${theme})`;
     elementmerriercontainermobile.style.filter = `invert(${theme})`;
+    elementarrow.style.filter = `invert(${theme})`;
   }, [theme]);
 
   const handleThemeChange = (value) => {

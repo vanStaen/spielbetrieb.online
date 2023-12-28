@@ -17,7 +17,7 @@ export const AcceptCookie = () => {
             } else {
                 elementCookieContainer.style.top = '0px';
             }
-        }, "1000");
+        }, "500");
     }, [])
 
     const handleCloseClick = (value) => {
