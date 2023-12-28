@@ -58,7 +58,7 @@ const App = observer(() => {
           <LanguageDropDown />
           <DarkModeDropDown />
           <LandingPage />
-          {!pageStore.allowCookie && <AcceptCookie />}
+          {(!pageStore.allowCookie || process.env.NODE_ENV === "development") && <AcceptCookie />}
         </div>
       </div>
     </BrowserRouter>

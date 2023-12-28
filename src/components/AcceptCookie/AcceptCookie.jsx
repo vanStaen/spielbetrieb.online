@@ -36,7 +36,7 @@ export const AcceptCookie = () => {
         <>
             <div className="cookie__container" id="cookiecontainer">
                 <div className="cookie__title">
-                    🍪 This website uses cookies.
+                    This website uses cookies.
                 </div>
                 <div className="cookie__body">
                     We use cookies to analyze website traffic and optimize your website experience.
