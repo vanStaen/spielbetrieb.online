@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { NotificationOutlined, MailOutlined, LinkOutlined } from '@ant-design/icons';
 
 import SpielbetriebLogo from "../img/logos/spielbetriebLogo.png";
+import MerrierLogo from "../img/logos/merrierLogo.png";
 import { Phone } from '../components/Phone/Phone';
 
 import './LandingPage.less';
@@ -65,7 +66,9 @@ export const LandingPage = () => {
                             content={
                                 <div className='merrier__container' id='merriercontainer'>
                                     <div className='merrier__background'></div>
-                                    <div className='merrier__title'>Merrier</div>
+                                    <img src={SpielbetriebLogo} className='merrier__biglogo' />
+                                    <img src={MerrierLogo} className='merrier__logo' />
+                                    {/*<div className='merrier__title'>Merrier</div>*/}
                                     <div className='merrier__subtitle'>{t("general.by")} Spielbetrieb</div>
                                 </div>
                             } />
