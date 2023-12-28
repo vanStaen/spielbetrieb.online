@@ -7,6 +7,7 @@ import { LanguageDropDown } from "./components/LanguageDropDown/LanguageDropDown
 import { DarkModeDropDown } from "./components/DarkModeDropDown/DarkModeDropDown";
 import { consoleGreetings } from "./helpers/consoleGreetings";
 import { LandingPage } from './pages/LandingPage';
+import { AcceptCookie } from "./components/AcceptCookie/AcceptCookie";
 
 import "./lib/i18n";
 import "./App.less";
@@ -46,6 +47,7 @@ const App = observer(() => {
           <LanguageDropDown />
           <DarkModeDropDown />
           <LandingPage />
+          <AcceptCookie />
         </div>
       </div>
     </BrowserRouter>
