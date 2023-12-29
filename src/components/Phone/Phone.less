@@ -1,7 +1,5 @@
-@fullwidth: 350px;
-@fullheight: 600px;
-@fullmobilewidth: 250px;
-@fullmobileheight: 400px;
+@fullheight: min(60vh, 600px);
+@fullwidth: calc(@fullheight * 0.6);
 
 .phone {
     text-align: center;
@@ -22,14 +20,7 @@
         border-bottom: 84.016px solid #fff;    
         border-radius: 40.228px; 
         box-shadow: 0 0 0 3.56px #C6C7CA; 
-    } 
-
-    @media only screen and (max-width: 675px) {
-        .phone__main {
-            height: @fullmobileheight;
-            width: @fullmobilewidth; 
-        } 
-     }
+    }
 
     .phone__main:after {
         content: ''; 
