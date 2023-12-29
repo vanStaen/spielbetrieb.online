@@ -72,7 +72,7 @@ export const LandingPage = () => {
                                     <img src={SpielbetriebLogo} className='merrier__biglogo' />
                                     {/*<img src={MerrierLogo} className='merrier__logo' />*/}
                                     <div className='merrier__title'>Merrier</div>
-                                    <div className='merrier__subtitle'>{t("general.by")} Spielbetrieb</div>
+                                    <div className='merrier__subtitle'>by Spielbetrieb</div>
                                 </div>
                             } />
                     </div>
@@ -86,7 +86,7 @@ export const LandingPage = () => {
                                 <img src={SpielbetriebLogo} className='merrier__biglogo' />
                                 {/*<img src={MerrierLogo} className='merrier__logo' />*/}
                                 <div className='merrier__title'>Merrier</div>
-                                <div className='merrier__subtitle'>{t("general.by")} Spielbetrieb</div>
+                                <div className='merrier__subtitle'>by Spielbetrieb</div>
                             </div>
                         } />
                 </div>
