@@ -5,6 +5,7 @@
    width: 100vw;
    height: 101vh;
    background-image: url('../img/background.jpg');
+   background-size: cover;
    .landingPage__doublearrow {
       position: absolute;
       right: 0;
@@ -122,14 +123,18 @@
    }
    .phone__container {
       position: absolute;
+      display: flex;
       height: 100vh;
       top: 0;
       right: 0;
       width: @widthPhonePanel;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       z-index: 1;
       .phone {
          position: relative;
-         transform: translate3d(30vw, -3%, 0);
+         transform: translate3d(30vw, 0, 0);
          transition: transform 1s ease;
          z-index: 1;
          cursor: pointer;
@@ -144,10 +149,13 @@
       display: none;
       height: 100vh;
       z-index: 10;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
    }
    @media only screen and (max-width: 675px) {
       .phone__mobileContainer {
-        display: block;
+        display: flex;
       }
    }
 }
