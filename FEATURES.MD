@@ -1,0 +1,56 @@
+## MVP Features
+
+- [ ] I. SHOWCASE
+  - [ ] Create/manage a profile
+  - [ ] Add/manage pictures
+    - [ ] Include tags
+    - [ ] Make private
+    - [ ] Tag as +18
+- [ ] II. INTERACT
+  - [ ] Search and filter users
+  - [ ] Access third-party profiles
+  - [ ] Access third-party photos
+    - [ ] Except +18, shown blury.
+    - [ ] Except private, only for friends
+  - [ ] Comment third-party photos
+    - [ ] comment
+    - [ ] moderate comment
+    - [ ] like
+- [ ] III. NETWORK
+  - [ ] Message third-party user
+    - [ ] Limit to 3 first-messages to unknow party per day
+    - [ ] No limit messages to friends
+    - [ ] Accept incoming messages
+  - [ ] Send friend requests
+  - [ ] Accept Friend requests
+  - [ ] Following third-party users
+    - [ ] Able to set what follower can see
+    - [ ] Able to disable the follower feature
+- [ ] IV. DATING
+  - [ ] Use Matching function (tinder-like feature)
+- [ ] V. EVENT
+  - [ ] Create/manage an event
+    - [ ] Create event details
+      - [ ] location
+      - [ ] date from/until
+      - [ ] add a picture
+      - [ ] allow anonymous attendees
+      - [ ] make private
+      - [ ] make forwardable
+    - [ ] Invite User
+    - [ ] Add more admin
+    - [ ] Differenciate between Event/Date
+  - [ ] Consult all public event
+  - [ ] Respond to an event
+    - [ ] Anonymously or not
+- [ ] VI. SECURITY
+  - [ ] Block a third-party user
+  - [ ] Report a user
+
+### Paying Options?
+
+- Less or no messaging limit
+- Access +18 photos
+- See who visited your profile
+- More right-swipe per day
+- Filter function by search?
