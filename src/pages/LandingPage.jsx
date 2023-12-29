@@ -70,8 +70,8 @@ export const LandingPage = () => {
                                 <div className='merrier__container' id='merriercontainer'>
                                     <div className='merrier__background'></div>
                                     <img src={SpielbetriebLogo} className='merrier__biglogo' />
-                                    <img src={MerrierLogo} className='merrier__logo' />
-                                    {/*<div className='merrier__title'>Merrier</div>*/}
+                                    {/*<img src={MerrierLogo} className='merrier__logo' />*/}
+                                    <div className='merrier__title'>Merrier</div>
                                     <div className='merrier__subtitle'>{t("general.by")} Spielbetrieb</div>
                                 </div>
                             } />
@@ -84,8 +84,8 @@ export const LandingPage = () => {
                             <div className='merrier__container' id='merriercontainermobile'>
                                 <div className='merrier__background'></div>
                                 <img src={SpielbetriebLogo} className='merrier__biglogo' />
-                                <img src={MerrierLogo} className='merrier__logo' />
-                                {/*<div className='merrier__title'>Merrier</div>*/}
+                                {/*<img src={MerrierLogo} className='merrier__logo' />*/}
+                                <div className='merrier__title'>Merrier</div>
                                 <div className='merrier__subtitle'>{t("general.by")} Spielbetrieb</div>
                             </div>
                         } />
