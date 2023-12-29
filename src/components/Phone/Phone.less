@@ -1,5 +1,5 @@
-@fullwidth: 40vh;
-@fullheight: 60vh;
+@fullheight: min(60vh, 600px);
+@fullwidth: calc(@fullheight * 0.6);
 
 .phone {
     text-align: center;
@@ -20,7 +20,8 @@
         border-bottom: 84.016px solid #fff;    
         border-radius: 40.228px; 
         box-shadow: 0 0 0 3.56px #C6C7CA; 
-    } 
+    }
+
     .phone__main:after {
         content: ''; 
         position: absolute; 
