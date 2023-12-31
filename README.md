@@ -2,6 +2,13 @@
 
 spielbetrieb.online | Portal
 
+## Graphic chart
+
+Logo color (blue)
+ - hex: #142436
+ - rgb: 20 36 54 
+
+
 ## Ressources
 
 Landing page based on this codePen: https://codepen.io/nelsonleite/pen/WwZNVN.
