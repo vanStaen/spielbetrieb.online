@@ -35,6 +35,7 @@ export const LandingPage = () => {
                 <div className='spielbetrieb__container' id='spielbetriebcontainer'>
                     <div className='spielbetrieb__logoAndText' id='spielbetrieb'>
                         <img src={SpielbetriebLogo} id="spielbetriebLogo" className='spielbetrieb__logo' />
+                        {/* <img src={MerrierLogo} id="spielbetriebLogo" className='spielbetrieb__logo' /> */}
                         <div className="spielbetrieb__text">Spielbetrieb </div>
                         <div className="spielbetrieb__subtext">{t('general.commingsoon')} </div>
                         <div className='spielbetrieb__links'>
