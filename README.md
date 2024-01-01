@@ -4,10 +4,14 @@ spielbetrieb.online | Portal
 
 ## Graphic chart
 
-Logo color (blue)
- - hex: #142436
- - rgb: 20 36 54 
+Logo color (dark blue)
 
+- hex: #142436
+- rgb: 20 36 54
+  Logo Inverted (pale beige)
+
+- hex: #e1cfbb
+- rgb: 225 207 187
 
 ## Ressources
 
