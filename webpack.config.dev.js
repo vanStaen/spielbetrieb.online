@@ -27,7 +27,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: "public/manifest.webmanifest" },
-        { from: "public/spielbetriebIcon.png" },
+        { from: "public/icon.png" },
       ],
     }),
   ],
