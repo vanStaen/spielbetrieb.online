@@ -40,7 +40,39 @@
     - [ ] Invite User
     - [ ] Add more admin
     - [ ] Differenciate between Event/Date
-  - [ ] Consult all public event
+  - [ ] Consult all public event (SpielPlan)
+  - [ ] Filter event
+    - [ ] Events
+      - [ ] All
+      - [ ] Barabend
+      - [ ] BDSM & Fetisch
+      - [ ] Freie Liebe
+      - [ ] Privat
+      - [ ] Rave
+      - [ ] Stammtisch
+      - [ ] Tagsüber
+      - [ ] Tanzparty
+    - [ ] Service
+      - [ ] All
+      - [ ] Beratung
+      - [ ] Kurs
+      - [ ] Shopping
+    - [ ] Club
+      - [ ] All
+      - [ ] Geheim
+      - [ ] Insomnia
+      - [ ] Kitkat
+      - [ ] Möchtegern
+    - [ ] Partner
+      - [ ] All
+      - [ ] Spielbetrieb
+    - [ ] Extra
+      - [ ] All
+      - [ ] LGBTQIA+
+      - [ ] Dresscode
+      - [ ] Afterwork
+      - [ ] Hardcore
+      - [ ] Rabatt
   - [ ] Respond to an event
     - [ ] Anonymously or not
 - [ ] VI. SECURITY
