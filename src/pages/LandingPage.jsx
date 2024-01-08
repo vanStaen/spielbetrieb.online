@@ -27,13 +27,13 @@ export const LandingPage = () => {
 
     return (
         <>
-            <div className='background' id='background'></div>
-            <div className='landingPage__doublearrow' id='arrow'>
+            <div className='background invertColorTheme' id='background'></div>
+            <div className='landingPage__doublearrow invertColorTheme' id='arrow'>
                 <DoubleLeftOutlined onClick={arrowClickHandler} />
             </div>
             <div className="landingPage__container">
-                <div className='spielbetrieb__container' id='spielbetriebcontainer'>
-                    <div className='spielbetrieb__logoAndText' id='spielbetrieb'>
+                <div className='spielbetrieb__container'>
+                    <div className='spielbetrieb__logoAndText invertColorTheme' id='spielbetrieb'>
                         <img src={SpielbetriebLogo} id="spielbetriebLogo" className='spielbetrieb__logo' />
                         {/* <img src={MerrierLogo} id="spielbetriebLogo" className='spielbetrieb__logo' /> */}
                         <div className="spielbetrieb__text">Spielbetrieb </div>
@@ -68,7 +68,7 @@ export const LandingPage = () => {
                         <Phone
                             color='white'
                             content={
-                                <div className='merrier__container' id='merriercontainer'>
+                                <div className='merrier__container invertColorTheme'>
                                     <div className='merrier__background'></div>
                                     <img src={MerrierLogo} className='merrier__biglogo' />
                                     <div className='merrier__title'>Merrier</div>
@@ -81,7 +81,7 @@ export const LandingPage = () => {
                     <Phone
                         color='white'
                         content={
-                            <div className='merrier__container' id='merriercontainermobile'>
+                            <div className='merrier__container invertColorTheme'>
                                 <div className='merrier__background'></div>
                                 <img src={MerrierLogo} className='merrier__biglogo' />
                                 <div className='merrier__title'>Merrier</div>

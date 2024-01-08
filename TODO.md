@@ -9,6 +9,7 @@
   - [x] Colors charts
     - [x] Light Theme
     - [x] Dark Theme
+    - [x] Theme based on central CSS class
   - [x] Accept Cookie
     - [x] Modal with button
     - [x] Mobx Store
@@ -17,3 +18,4 @@
       - [x] If Cookie allowed
       - [x] Last theme used
       - [x] Last Language used
+- [ ] Setting up backend

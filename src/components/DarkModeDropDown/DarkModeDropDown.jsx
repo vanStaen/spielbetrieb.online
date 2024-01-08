@@ -13,6 +13,7 @@ export const DarkModeDropDown = observer(() => {
   const [theme, setTheme] = useState(pageStore.selectedTheme);
 
   useEffect(() => {
+    /* 
     const elementspielbetriebcontainer = document.getElementById('spielbetriebcontainer');
     const elementbackground = document.getElementById('background');
     const elementdarkmodedropdown = document.getElementById('darkmodedropdown');
@@ -27,6 +28,13 @@ export const DarkModeDropDown = observer(() => {
     elementmerriercontainer.style.filter = `invert(${theme})`;
     elementmerriercontainermobile.style.filter = `invert(${theme})`;
     elementarrow.style.filter = `invert(${theme})`;
+    */
+
+    const selectedClasses = document.getElementsByClassName("invertColorTheme");
+    for (var i = 0, il = selectedClasses.length; i < il; i++) {
+      selectedClasses[i].style.filter = `invert(${theme})`;
+    }
+
   }, [theme]);
 
   const handleThemeChange = (value) => {
@@ -53,7 +61,7 @@ export const DarkModeDropDown = observer(() => {
   );
 
   return (
-    <div className="darkmodeDropdown" id='darkmodedropdown'>
+    <div className="darkmodeDropdown invertColorTheme">
       <Dropdown overlay={menu} trigger={"click"}>
         <a
           className="ant-dropdown-link"

@@ -42,7 +42,7 @@ export const LanguageDropDown = observer(() => {
   );
 
   return (
-    <div className="languageDropdown" id='languagedropdown'>
+    <div className="languageDropdown invertColorTheme">
       <Dropdown overlay={menu} trigger={"click"}>
         <a
           className="ant-dropdown-link"
