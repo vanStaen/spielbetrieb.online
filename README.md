@@ -14,6 +14,9 @@ Logo Inverted (pale beige)
 - hex: #e1cfbb
 - rgb: 225 207 187
 
+Merrier font: 'DMSerifDisplay' (google font api)
+https://fonts.google.com/specimen/DM+Serif+Display
+
 ## Ressources
 
 Landing page based on this codePen: https://codepen.io/nelsonleite/pen/WwZNVN.
