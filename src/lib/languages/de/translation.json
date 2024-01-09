@@ -84,5 +84,8 @@
     "cookiesTitle" : "Diese Website verwendet Cookies.",
     "cookiesDesc" : "Wir verwenden Cookies, um den Website-Verkehr zu analysieren und Ihr Website-Erlebnis zu optimieren. Wenn Sie unsere Verwendung von Cookies akzeptieren, werden Ihre Daten mit allen anderen Benutzerdaten zusammengeführt.",
     "accept" : "Akzeptieren"
-  }
+  },
+  "newsletter": {
+    "subscribe": "Den Newsletter Abonnieren"
+  } 
 }

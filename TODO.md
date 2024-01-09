@@ -18,4 +18,8 @@
       - [x] If Cookie allowed
       - [x] Last theme used
       - [x] Last Language used
-- [ ] Setting up backend
+- [ ] Boilerplate up backend on Heroku
+- [ ] Newsletter 
+  - [ ] UI form
+  - [ ] PostGres Database
+  - [ ] API endpoint
